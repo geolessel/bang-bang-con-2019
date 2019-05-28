@@ -1,0 +1,97 @@
+\documentclass[twoside,letterpaper]{book}
+\usepackage{sudoku}
+\usepackage{multicol}
+\usepackage[paperheight=8.5in,paperwidth=5.5in,twoside,left=1.5in,right=0.5in,top=1in,bottom=1in]{geometry}
+\setlength\sudokusize{8.5cm}
+\setlength\sudokuthickline{1pt}
+\setlength\sudokuthinline{0.2pt}
+\renewcommand*\sudokuformat[1]{\huge\sffamily#1}
+\usepackage{fancyhdr}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[RO,LE]{\thepage}
+\fancyhead[RE,LO]{John's Year of Sudoku}
+\renewcommand{\footrulewidth}{0.2pt}
+\renewcommand{\headrulewidth}{0.2pt}
+
+\begin{center}
+\vspace*{1in}
+\begin{sudoku}
+| | | |6| | |2| | |.
+| | |7|3|2|1|6| | |.
+|4| | | | | | |1| |.
+|7| | |4|1| |5|6|8|.
+| | | | | |8| |9| |.
+|8| | |9|7| |3|2|4|.
+|1| | | | | | |3| |.
+| | |5|1|3|6|4| | |.
+| | | |7| | |1| | |.
+\end{sudoku}
+\vspace*{1in}
+\footnotesize
+Solution on page \pageref{puzzle55977}
+\fancyhead[RO,LE]{January 1}
+\fancyfoot[RE,LO]{Rating: 12}
+\newpage
+\vspace*{1in}
+\begin{sudoku}
+| | |7|6| |9|4| | |.
+| | | | |8| | | | |.
+| |8|2|7| |4|9|1| |.
+| |6| |2| |1| |5| |.
+| | | | | | | | | |.
+|9| |8|5| |3|1| |7|.
+|3| |1|9| |8|5| |4|.
+| | |4| | | |7| | |.
+| | | | |1| | | | |.
+\end{sudoku}
+\vspace*{1in}
+\footnotesize
+Solution on page \pageref{puzzle34259}
+\fancyhead[RO,LE]{December 31}
+\fancyfoot[RE,LO]{Rating: 2155}
+\newpage
+\newpage
+\setlength\sudokusize{4cm}
+\setlength\sudokuthickline{1pt}
+\setlength\sudokuthinline{0.1pt}
+\renewcommand*\sudokuformat[1]{\normalsize\sffamily#1}
+\footnotesize
+\fancyhead[RO,LE]{Solutions}
+\fancyfoot[RE,LO]{}
+\setlength{\columnsep}{15pt}
+\begin{multicols}{2}
+January 1\label{puzzle55977}\\*
+\vspace{0.1in}
+\begin{sudoku}
+|3|5|1|6|8|4|2|7|9|.
+|9|8|7|3|2|1|6|4|5|.
+|4|6|2|5|9|7|8|1|3|.
+|7|2|9|4|1|3|5|6|8|.
+|5|4|3|2|6|8|7|9|1|.
+|8|1|6|9|7|5|3|2|4|.
+|1|7|4|8|5|2|9|3|6|.
+|2|9|5|1|3|6|4|8|7|.
+|6|3|8|7|4|9|1|5|2|.
+\end{sudoku}
+\vfill
+December 31\label{puzzle34259}\\*
+\vspace{0.1in}
+\begin{sudoku}
+|1|3|7|6|5|9|4|8|2|.
+|4|9|6|1|8|2|3|7|5|.
+|5|8|2|7|3|4|9|1|6|.
+|7|6|3|2|4|1|8|5|9|.
+|2|1|5|8|9|7|6|4|3|.
+|9|4|8|5|6|3|1|2|7|.
+|3|2|1|9|7|8|5|6|4|.
+|8|5|4|3|2|6|7|9|1|.
+|6|7|9|4|1|5|2|3|8|.
+\end{sudoku}
+\vfill
+\end{multicols}
+\end{center}
+\end{document}
